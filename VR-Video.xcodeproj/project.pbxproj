@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB4CAC801DF91A9700E233C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CAC7F1DF91A9700E233C4 /* AppDelegate.swift */; };
+		EB4CAC821DF91A9700E233C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CAC811DF91A9700E233C4 /* ViewController.swift */; };
+		EB4CAC851DF91A9700E233C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4CAC831DF91A9700E233C4 /* Main.storyboard */; };
+		EB4CAC871DF91A9700E233C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4CAC861DF91A9700E233C4 /* Assets.xcassets */; };
+		EB4CAC8A1DF91A9700E233C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4CAC881DF91A9700E233C4 /* LaunchScreen.storyboard */; };
+		EB4CAC931DF91ADF00E233C4 /* MovieTheater.scn in Resources */ = {isa = PBXBuildFile; fileRef = EB4CAC911DF91ADF00E233C4 /* MovieTheater.scn */; };
+		EB4CAC941DF91ADF00E233C4 /* MovieTheaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CAC921DF91ADF00E233C4 /* MovieTheaterView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB4CAC7C1DF91A9700E233C4 /* VR-Video.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VR-Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4CAC7F1DF91A9700E233C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB4CAC811DF91A9700E233C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB4CAC841DF91A9700E233C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB4CAC861DF91A9700E233C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB4CAC891DF91A9700E233C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB4CAC8B1DF91A9700E233C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB4CAC911DF91ADF00E233C4 /* MovieTheater.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MovieTheater.scn; sourceTree = "<group>"; };
+		EB4CAC921DF91ADF00E233C4 /* MovieTheaterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTheaterView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB4CAC791DF91A9700E233C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB4CAC731DF91A9700E233C4 = {
+			isa = PBXGroup;
+			children = (
+				EB4CAC7E1DF91A9700E233C4 /* VR-Video */,
+				EB4CAC7D1DF91A9700E233C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB4CAC7D1DF91A9700E233C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB4CAC7C1DF91A9700E233C4 /* VR-Video.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB4CAC7E1DF91A9700E233C4 /* VR-Video */ = {
+			isa = PBXGroup;
+			children = (
+				EB4CAC911DF91ADF00E233C4 /* MovieTheater.scn */,
+				EB4CAC921DF91ADF00E233C4 /* MovieTheaterView.swift */,
+				EB4CAC7F1DF91A9700E233C4 /* AppDelegate.swift */,
+				EB4CAC811DF91A9700E233C4 /* ViewController.swift */,
+				EB4CAC831DF91A9700E233C4 /* Main.storyboard */,
+				EB4CAC861DF91A9700E233C4 /* Assets.xcassets */,
+				EB4CAC881DF91A9700E233C4 /* LaunchScreen.storyboard */,
+				EB4CAC8B1DF91A9700E233C4 /* Info.plist */,
+			);
+			path = "VR-Video";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB4CAC7B1DF91A9700E233C4 /* VR-Video */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4CAC8E1DF91A9700E233C4 /* Build configuration list for PBXNativeTarget "VR-Video" */;
+			buildPhases = (
+				EB4CAC781DF91A9700E233C4 /* Sources */,
+				EB4CAC791DF91A9700E233C4 /* Frameworks */,
+				EB4CAC7A1DF91A9700E233C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VR-Video";
+			productName = "VR-Video";
+			productReference = EB4CAC7C1DF91A9700E233C4 /* VR-Video.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB4CAC741DF91A9700E233C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = "Tom Salvo";
+				TargetAttributes = {
+					EB4CAC7B1DF91A9700E233C4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 354MRHL389;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB4CAC771DF91A9700E233C4 /* Build configuration list for PBXProject "VR-Video" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB4CAC731DF91A9700E233C4;
+			productRefGroup = EB4CAC7D1DF91A9700E233C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB4CAC7B1DF91A9700E233C4 /* VR-Video */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB4CAC7A1DF91A9700E233C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4CAC8A1DF91A9700E233C4 /* LaunchScreen.storyboard in Resources */,
+				EB4CAC871DF91A9700E233C4 /* Assets.xcassets in Resources */,
+				EB4CAC851DF91A9700E233C4 /* Main.storyboard in Resources */,
+				EB4CAC931DF91ADF00E233C4 /* MovieTheater.scn in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB4CAC781DF91A9700E233C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4CAC941DF91ADF00E233C4 /* MovieTheaterView.swift in Sources */,
+				EB4CAC821DF91A9700E233C4 /* ViewController.swift in Sources */,
+				EB4CAC801DF91A9700E233C4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB4CAC831DF91A9700E233C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4CAC841DF91A9700E233C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB4CAC881DF91A9700E233C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4CAC891DF91A9700E233C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB4CAC8C1DF91A9700E233C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB4CAC8D1DF91A9700E233C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB4CAC8F1DF91A9700E233C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 354MRHL389;
+				INFOPLIST_FILE = "VR-Video/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomsalvo.VR-Video";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB4CAC901DF91A9700E233C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 354MRHL389;
+				INFOPLIST_FILE = "VR-Video/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomsalvo.VR-Video";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB4CAC771DF91A9700E233C4 /* Build configuration list for PBXProject "VR-Video" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4CAC8C1DF91A9700E233C4 /* Debug */,
+				EB4CAC8D1DF91A9700E233C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB4CAC8E1DF91A9700E233C4 /* Build configuration list for PBXNativeTarget "VR-Video" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4CAC8F1DF91A9700E233C4 /* Debug */,
+				EB4CAC901DF91A9700E233C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB4CAC741DF91A9700E233C4 /* Project object */;
+}
