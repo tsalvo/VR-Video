@@ -11,33 +11,31 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    private weak var movieTheaterView: MovieTheaterView?
+    
+    override var prefersHomeIndicatorAutoHidden: Bool { return true }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let movieURL = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8") else { return }
+        guard let movieURL = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8"),
+              let movieTheaterView = MovieTheaterView(withPlayer: AVPlayer(url: movieURL))
+        else { return }
         
-        let movieTheaterView = MovieTheaterView(withPlayer: AVPlayer(url: movieURL))
         movieTheaterView.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(movieTheaterView)
         
-        self.view.addConstraints([
-            NSLayoutConstraint(item: movieTheaterView, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1.0, constant: 0.0),
-            
-            NSLayoutConstraint(item: movieTheaterView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1.0, constant: 0.0),
-            
-            NSLayoutConstraint(item: movieTheaterView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1.0, constant: 0.0),
-            
-            NSLayoutConstraint(item: movieTheaterView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: 0.0)])
+        self.view.leadingAnchor.constraint(equalTo: movieTheaterView.leadingAnchor).isActive = true
+        self.view.trailingAnchor.constraint(equalTo: movieTheaterView.trailingAnchor).isActive = true
+        self.view.topAnchor.constraint(equalTo: movieTheaterView.topAnchor).isActive = true
+        self.view.bottomAnchor.constraint(equalTo: movieTheaterView.bottomAnchor).isActive = true
         
-        // Do any additional setup after loading the view, typically from a nib.
+        self.movieTheaterView = movieTheaterView
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction private func screenTapped(_ sender: AnyObject?) {
+        self.movieTheaterView?.screenTapped()
     }
-
-
 }
 
