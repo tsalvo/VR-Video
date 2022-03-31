@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,6 +21,7 @@
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="p5x-DV-8Ko" appends="YES" id="2nz-vx-sbE"/>
+                            <outletCollection property="gestureRecognizers" destination="vaZ-db-Q8m" appends="YES" id="Civ-Ko-oIs"/>
                         </connections>
                     </view>
                 </viewController>
@@ -28,6 +29,11 @@
                 <tapGestureRecognizer id="p5x-DV-8Ko">
                     <connections>
                         <action selector="screenTapped:" destination="BYZ-38-t0r" id="csp-py-GSW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="vaZ-db-Q8m">
+                    <connections>
+                        <action selector="screenDoubleTapped:" destination="BYZ-38-t0r" id="Kga-5b-0Yv"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

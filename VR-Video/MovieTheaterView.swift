@@ -42,6 +42,8 @@ class MovieTheaterView: UIView {
     }
     
     private static let motionRollInitialOffset: Float = (-90.0 * Float.pi) / 180.0
+    private var lastKnownMotionYaw: Float = 0
+    private var motionYawOffset: Float = 0
     private let movieTheaterScene: SCNScene
     private let motionManager: CMMotionManager
     private var currentLighting: Lighting {
@@ -121,11 +123,13 @@ class MovieTheaterView: UIView {
         // Respond to user head movement
         self.motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
         
-        self.motionManager.startDeviceMotionUpdates(using: CMAttitudeReferenceFrame.xArbitraryZVertical, to: OperationQueue.main, withHandler: { (motion: CMDeviceMotion?, error: Error?) -> Void in
+        self.motionManager.startDeviceMotionUpdates(using: CMAttitudeReferenceFrame.xArbitraryZVertical, to: OperationQueue.main, withHandler: { [weak self] (motion: CMDeviceMotion?, error: Error?) -> Void in
+            guard let motion = motion, let self = self else { return }
+            self.lastKnownMotionYaw = Float(motion.attitude.yaw)
             camerasNode.eulerAngles = SCNVector3Make(
-                Float(motion!.attitude.roll) + MovieTheaterView.motionRollInitialOffset,
-                Float(motion!.attitude.yaw),
-                Float(motion!.attitude.pitch));
+                Float(motion.attitude.roll) + MovieTheaterView.motionRollInitialOffset,
+                Float(motion.attitude.yaw) + self.motionYawOffset,
+                Float(motion.attitude.pitch));
         })
     }
     
@@ -135,5 +139,9 @@ class MovieTheaterView: UIView {
     
     func screenTapped() {
         self.currentLighting = self.currentLighting.next
+    }
+    
+    func screenDoubleTapped() {
+        self.motionYawOffset = (-1.0) * self.lastKnownMotionYaw
     }
 }

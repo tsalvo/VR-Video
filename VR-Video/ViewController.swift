@@ -37,5 +37,9 @@ class ViewController: UIViewController {
     @IBAction private func screenTapped(_ sender: AnyObject?) {
         self.movieTheaterView?.screenTapped()
     }
+    
+    @IBAction private func screenDoubleTapped(_ sender: AnyObject?) {
+        self.movieTheaterView?.screenDoubleTapped()
+    }
 }
 
